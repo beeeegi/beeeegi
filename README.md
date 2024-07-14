@@ -1,1 +1,1 @@
-[![GitHub stats](https://github-readme-stats.vercel.app/api?username=beeeegi)](https://github.com/anuraghazra/github-readme-stats)
+<img src="https://github-readme-stats.vercel.app/api?username=beeeegi&theme=dark&show_icons=true&hide_border=true&count_private=true" alt="beeeegi's GitHub Stats" /><img src="https://github-readme-stats.vercel.app/api/top-langs/?username=beeeegi&theme=dark&show_icons=true&hide_border=true&layout=compact" alt="beeeegi's GitHub Stats" />
