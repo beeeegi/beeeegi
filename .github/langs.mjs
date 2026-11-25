@@ -6,7 +6,7 @@ import { tmpdir } from 'node:os';
 const token = process.env.LANGS_TOKEN;
 const out = process.argv[2] || 'profile/langs.svg';
 const hidden = new Set(['HTML', 'CSS', 'SCSS', 'Less']);
-const count = 20;
+const count = 8;
 
 const LANGS = {
   '.rs': 'Rust', '.ts': 'TypeScript', '.tsx': 'TypeScript', '.mts': 'TypeScript', '.cts': 'TypeScript',
@@ -22,9 +22,9 @@ const LANGS = {
   '.ahk': 'AutoHotkey', '.nim': 'Nim', '.jl': 'Julia', '.vb': 'Visual Basic', '.fs': 'F#',
 };
 const COLORS = {
-  Rust: '#dea584', TypeScript: '#3178c6', JavaScript: '#f1e05a', Lua: '#000080', Luau: '#00a2ff', Python: '#3572a5',
-  'C#': '#178600', 'C++': '#f34b7d', C: '#555555', Kotlin: '#a97bff', Java: '#b07219', Go: '#00add8', Shell: '#89e051',
-  PowerShell: '#012456', PHP: '#4f5d95', Ruby: '#701516', Swift: '#f05138', Dart: '#00b4ab', Vue: '#41b883',
+  Rust: '#dea584', TypeScript: '#3178c6', JavaScript: '#f1e05a', Lua: '#4f5bd5', Luau: '#00a2ff', Python: '#3572a5',
+  'C#': '#178600', 'C++': '#f34b7d', C: '#8a8a8a', Kotlin: '#a97bff', Java: '#b07219', Go: '#00add8', Shell: '#89e051',
+  PowerShell: '#2f6fb3', PHP: '#4f5d95', Ruby: '#701516', Swift: '#f05138', Dart: '#00b4ab', Vue: '#41b883',
   Svelte: '#ff3e00', GDScript: '#355570', WGSL: '#1a5e9a', GLSL: '#5686a5', HLSL: '#aace60', SQL: '#e38c00',
   Zig: '#ec915c', Batchfile: '#c1f12e', R: '#198ce7', HTML: '#e34c26', CSS: '#663399', SCSS: '#c6538c',
   Assembly: '#6e4c13', Elixir: '#6e4a7e', Haskell: '#5e5086', Scala: '#c22d40', 'Objective-C': '#438eff',
@@ -119,37 +119,32 @@ for (const r of repos) {
 const esc = s => s.replace(/&/g, '&amp;').replace(/</g, '&lt;');
 const short = n => (n >= 1e6 ? (n / 1e6).toFixed(1) + 'M' : n >= 1e3 ? (n / 1e3).toFixed(n >= 1e5 ? 0 : 1) + 'k' : String(n));
 const all = Object.entries(totals).filter(([l, n]) => !hidden.has(l) && n > 0).sort((a, b) => b[1] - a[1]);
-const top = all.slice(0, count);
-const sum = top.reduce((a, [, n]) => a + n, 0);
 const total = all.reduce((a, [, n]) => a + n, 0);
-const color = l => COLORS[l] || `hsl(${[...l].reduce((a, c) => a + c.charCodeAt(0) * 37, 0) % 360} 55% 55%)`;
-
-const W = 467, pad = 25, barY = 74, rowH = 24, cols = 2, colW = (W - pad * 2) / cols;
-const rows = Math.ceil(top.length / cols);
-const H = barY + 30 + rows * rowH + 14;
-let x = 0;
-const usable = W - pad * 2;
-const segs = top.map(([l, n], i) => {
-  const w = Math.max(2, (n / sum) * usable);
-  const s = `<rect x="${(pad + x).toFixed(2)}" y="${barY}" width="${w.toFixed(2)}" height="8" fill="${color(l)}"/>`;
-  x += w;
-  return s;
-}).join('');
-const items = top.map(([l, n], i) => {
-  const cx = pad + (i % cols) * colW, cy = barY + 38 + Math.floor(i / cols) * rowH;
-  const pct = ((n / total) * 100).toFixed(1);
-  return `<g transform="translate(${cx.toFixed(1)},${cy})"><circle cx="5" cy="-4" r="5" fill="${color(l)}"/><text x="17" y="0" class="n">${esc(l)}</text><text x="${(colW - 14).toFixed(1)}" y="0" class="v" text-anchor="end">${short(n)} <tspan class="p">${pct}%</tspan></text></g>`;
-}).join('');
-const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Most used languages by lines of code">
-<style>text{font:400 12.5px 'Segoe UI',Ubuntu,'Helvetica Neue',sans-serif;fill:#c9d1d9}.t{font:600 18px 'Segoe UI',Ubuntu,sans-serif;fill:#fff}.s{fill:#8b949e;font-size:12px}.v{fill:#8b949e}.p{fill:#6e7681}</style>
-<rect x="0.5" y="0.5" rx="6" width="${W - 1}" height="${H - 1}" fill="#151515"/>
-<text x="${pad}" y="36" class="t">Most Used Languages</text>
-<text x="${pad}" y="56" class="s">${short(total)} lines of code across ${used} repos</text>
-<clipPath id="bar"><rect x="${pad}" y="${barY}" width="${usable}" height="8" rx="4"/></clipPath>
-<g clip-path="url(#bar)">${segs}</g>
-${items}
-</svg>`;
+const rest = all.slice(count).reduce((a, [, n]) => a + n, 0);
+const rows = rest > 0 ? [...all.slice(0, count), ['Other', rest]] : all.slice(0, count);
+const color = l => (l === 'Other' ? 'var(--faint)' : COLORS[l] || `hsl(${[...l].reduce((a, c) => a + c.charCodeAt(0) * 37, 0) % 360} 55% 55%)`);
+const FONT = `-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif`;
+const THEME = `:root{--bg:#ffffff;--line:#d0d7de;--fg:#1f2328;--mute:#59636e;--faint:#818b98;--track:#eff2f5}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--line:#30363d;--fg:#e6edf3;--mute:#9198a1;--faint:#656c76;--track:#21262d}}
+text{font-family:${FONT};fill:var(--fg)}`;
+const W = 495, pad = 24, head = 64, rowH = 27, nameW = 96, valW = 54;
+const H = head + rows.length * rowH + 14;
+const max = Math.max(...rows.map(([, n]) => n));
+const track = W - pad * 2 - nameW - valW;
+const body = rows.map(([l, n], i) => {
+  const y = head + i * rowH;
+  const w = Math.max(3, (n / max) * track);
+  return `<text x="${pad}" y="${y + 9}" font-size="13" dominant-baseline="middle">${esc(l)}</text>
+<rect x="${pad + nameW}" y="${y + 4}" width="${track}" height="10" rx="5" fill="var(--track)"/>
+<rect x="${pad + nameW}" y="${y + 4}" width="${w.toFixed(1)}" height="10" rx="5" fill="${color(l)}"/>
+<text x="${W - pad}" y="${y + 9}" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">${short(n)}</text>`;
+}).join('\n');
+const svg = `<svg xmlns="http://www.w3.org/2000/svg" width="${W}" height="${H}" viewBox="0 0 ${W} ${H}" role="img" aria-label="Languages by lines of code"><style>${THEME}</style>
+<rect x="0.5" y="0.5" width="${W - 1}" height="${H - 1}" rx="10" style="fill:var(--bg);stroke:var(--line)"/>
+<text x="${pad}" y="36" font-size="16" font-weight="600">Languages</text>
+<text x="${W - pad}" y="36" font-size="12.5" text-anchor="end" style="fill:var(--mute)">${short(total)} lines · ${used} repos</text>
+${body}</svg>`;
 mkdirSync(dirname(out), { recursive: true });
 writeFileSync(out, svg);
 console.log(`${used} repos, ${total} lines, ${all.length} languages -> ${out}`);
-console.log(top.map(([l, n]) => `${l} ${n}`).join('\n'));
+console.log(rows.map(([l, n]) => `${l} ${n}`).join('\n'));

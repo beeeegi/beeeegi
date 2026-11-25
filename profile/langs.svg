@@ -1,9 +1,42 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="467" height="334" viewBox="0 0 467 334" role="img" aria-label="Most used languages by lines of code">
-<style>text{font:400 12.5px 'Segoe UI',Ubuntu,'Helvetica Neue',sans-serif;fill:#c9d1d9}.t{font:600 18px 'Segoe UI',Ubuntu,sans-serif;fill:#fff}.s{fill:#8b949e;font-size:12px}.v{fill:#8b949e}.p{fill:#6e7681}</style>
-<rect x="0.5" y="0.5" rx="6" width="466" height="333" fill="#151515"/>
-<text x="25" y="36" class="t">Most Used Languages</text>
-<text x="25" y="56" class="s">532k lines of code across 67 repos</text>
-<clipPath id="bar"><rect x="25" y="74" width="417" height="8" rx="4"/></clipPath>
-<g clip-path="url(#bar)"><rect x="25.00" y="74" width="136.93" height="8" fill="#3178c6"/><rect x="161.93" y="74" width="60.81" height="8" fill="#00a2ff"/><rect x="222.74" y="74" width="55.12" height="8" fill="#dea584"/><rect x="277.86" y="74" width="42.03" height="8" fill="#3572a5"/><rect x="319.88" y="74" width="39.68" height="8" fill="#f1e05a"/><rect x="359.57" y="74" width="28.02" height="8" fill="#ff3e00"/><rect x="387.59" y="74" width="16.62" height="8" fill="#f34b7d"/><rect x="404.20" y="74" width="13.95" height="8" fill="#a97bff"/><rect x="418.16" y="74" width="10.81" height="8" fill="#178600"/><rect x="428.96" y="74" width="8.04" height="8" fill="#e38c00"/><rect x="437.00" y="74" width="3.29" height="8" fill="#555555"/><rect x="440.30" y="74" width="2.00" height="8" fill="#012456"/><rect x="442.30" y="74" width="2.00" height="8" fill="#000080"/><rect x="444.30" y="74" width="2.00" height="8" fill="#c1f12e"/><rect x="446.30" y="74" width="2.00" height="8" fill="#b07219"/><rect x="448.30" y="74" width="2.00" height="8" fill="#89e051"/><rect x="450.30" y="74" width="2.00" height="8" fill="#1a5e9a"/><rect x="452.30" y="74" width="2.00" height="8" fill="#4f5d95"/></g>
-<g transform="translate(25.0,112)"><circle cx="5" cy="-4" r="5" fill="#3178c6"/><text x="17" y="0" class="n">TypeScript</text><text x="194.5" y="0" class="v" text-anchor="end">175k <tspan class="p">32.8%</tspan></text></g><g transform="translate(233.5,112)"><circle cx="5" cy="-4" r="5" fill="#00a2ff"/><text x="17" y="0" class="n">Luau</text><text x="194.5" y="0" class="v" text-anchor="end">77.5k <tspan class="p">14.6%</tspan></text></g><g transform="translate(25.0,136)"><circle cx="5" cy="-4" r="5" fill="#dea584"/><text x="17" y="0" class="n">Rust</text><text x="194.5" y="0" class="v" text-anchor="end">70.3k <tspan class="p">13.2%</tspan></text></g><g transform="translate(233.5,136)"><circle cx="5" cy="-4" r="5" fill="#3572a5"/><text x="17" y="0" class="n">Python</text><text x="194.5" y="0" class="v" text-anchor="end">53.6k <tspan class="p">10.1%</tspan></text></g><g transform="translate(25.0,160)"><circle cx="5" cy="-4" r="5" fill="#f1e05a"/><text x="17" y="0" class="n">JavaScript</text><text x="194.5" y="0" class="v" text-anchor="end">50.6k <tspan class="p">9.5%</tspan></text></g><g transform="translate(233.5,160)"><circle cx="5" cy="-4" r="5" fill="#ff3e00"/><text x="17" y="0" class="n">Svelte</text><text x="194.5" y="0" class="v" text-anchor="end">35.7k <tspan class="p">6.7%</tspan></text></g><g transform="translate(25.0,184)"><circle cx="5" cy="-4" r="5" fill="#f34b7d"/><text x="17" y="0" class="n">C++</text><text x="194.5" y="0" class="v" text-anchor="end">21.2k <tspan class="p">4.0%</tspan></text></g><g transform="translate(233.5,184)"><circle cx="5" cy="-4" r="5" fill="#a97bff"/><text x="17" y="0" class="n">Kotlin</text><text x="194.5" y="0" class="v" text-anchor="end">17.8k <tspan class="p">3.3%</tspan></text></g><g transform="translate(25.0,208)"><circle cx="5" cy="-4" r="5" fill="#178600"/><text x="17" y="0" class="n">C#</text><text x="194.5" y="0" class="v" text-anchor="end">13.8k <tspan class="p">2.6%</tspan></text></g><g transform="translate(233.5,208)"><circle cx="5" cy="-4" r="5" fill="#e38c00"/><text x="17" y="0" class="n">SQL</text><text x="194.5" y="0" class="v" text-anchor="end">10.2k <tspan class="p">1.9%</tspan></text></g><g transform="translate(25.0,232)"><circle cx="5" cy="-4" r="5" fill="#555555"/><text x="17" y="0" class="n">C</text><text x="194.5" y="0" class="v" text-anchor="end">4.2k <tspan class="p">0.8%</tspan></text></g><g transform="translate(233.5,232)"><circle cx="5" cy="-4" r="5" fill="#012456"/><text x="17" y="0" class="n">PowerShell</text><text x="194.5" y="0" class="v" text-anchor="end">833 <tspan class="p">0.2%</tspan></text></g><g transform="translate(25.0,256)"><circle cx="5" cy="-4" r="5" fill="#000080"/><text x="17" y="0" class="n">Lua</text><text x="194.5" y="0" class="v" text-anchor="end">484 <tspan class="p">0.1%</tspan></text></g><g transform="translate(233.5,256)"><circle cx="5" cy="-4" r="5" fill="#c1f12e"/><text x="17" y="0" class="n">Batchfile</text><text x="194.5" y="0" class="v" text-anchor="end">199 <tspan class="p">0.0%</tspan></text></g><g transform="translate(25.0,280)"><circle cx="5" cy="-4" r="5" fill="#b07219"/><text x="17" y="0" class="n">Java</text><text x="194.5" y="0" class="v" text-anchor="end">189 <tspan class="p">0.0%</tspan></text></g><g transform="translate(233.5,280)"><circle cx="5" cy="-4" r="5" fill="#89e051"/><text x="17" y="0" class="n">Shell</text><text x="194.5" y="0" class="v" text-anchor="end">182 <tspan class="p">0.0%</tspan></text></g><g transform="translate(25.0,304)"><circle cx="5" cy="-4" r="5" fill="#1a5e9a"/><text x="17" y="0" class="n">WGSL</text><text x="194.5" y="0" class="v" text-anchor="end">172 <tspan class="p">0.0%</tspan></text></g><g transform="translate(233.5,304)"><circle cx="5" cy="-4" r="5" fill="#4f5d95"/><text x="17" y="0" class="n">PHP</text><text x="194.5" y="0" class="v" text-anchor="end">113 <tspan class="p">0.0%</tspan></text></g>
-</svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="495" height="321" viewBox="0 0 495 321" role="img" aria-label="Languages by lines of code"><style>:root{--bg:#ffffff;--line:#d0d7de;--fg:#1f2328;--mute:#59636e;--faint:#818b98;--track:#eff2f5}
+@media (prefers-color-scheme:dark){:root{--bg:#0d1117;--line:#30363d;--fg:#e6edf3;--mute:#9198a1;--faint:#656c76;--track:#21262d}}
+text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helvetica,Arial,sans-serif;fill:var(--fg)}</style>
+<rect x="0.5" y="0.5" width="494" height="320" rx="10" style="fill:var(--bg);stroke:var(--line)"/>
+<text x="24" y="36" font-size="16" font-weight="600">Languages</text>
+<text x="471" y="36" font-size="12.5" text-anchor="end" style="fill:var(--mute)">532k lines · 67 repos</text>
+<text x="24" y="73" font-size="13" dominant-baseline="middle">TypeScript</text>
+<rect x="120" y="68" width="297" height="10" rx="5" fill="var(--track)"/>
+<rect x="120" y="68" width="297.0" height="10" rx="5" fill="#3178c6"/>
+<text x="471" y="73" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">175k</text>
+<text x="24" y="100" font-size="13" dominant-baseline="middle">Luau</text>
+<rect x="120" y="95" width="297" height="10" rx="5" fill="var(--track)"/>
+<rect x="120" y="95" width="131.9" height="10" rx="5" fill="#00a2ff"/>
+<text x="471" y="100" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">77.5k</text>
+<text x="24" y="127" font-size="13" dominant-baseline="middle">Rust</text>
+<rect x="120" y="122" width="297" height="10" rx="5" fill="var(--track)"/>
+<rect x="120" y="122" width="119.6" height="10" rx="5" fill="#dea584"/>
+<text x="471" y="127" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">70.3k</text>
+<text x="24" y="154" font-size="13" dominant-baseline="middle">Python</text>
+<rect x="120" y="149" width="297" height="10" rx="5" fill="var(--track)"/>
+<rect x="120" y="149" width="91.2" height="10" rx="5" fill="#3572a5"/>
+<text x="471" y="154" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">53.6k</text>
+<text x="24" y="181" font-size="13" dominant-baseline="middle">JavaScript</text>
+<rect x="120" y="176" width="297" height="10" rx="5" fill="var(--track)"/>
+<rect x="120" y="176" width="86.1" height="10" rx="5" fill="#f1e05a"/>
+<text x="471" y="181" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">50.6k</text>
+<text x="24" y="208" font-size="13" dominant-baseline="middle">Svelte</text>
+<rect x="120" y="203" width="297" height="10" rx="5" fill="var(--track)"/>
+<rect x="120" y="203" width="60.8" height="10" rx="5" fill="#ff3e00"/>
+<text x="471" y="208" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">35.7k</text>
+<text x="24" y="235" font-size="13" dominant-baseline="middle">C++</text>
+<rect x="120" y="230" width="297" height="10" rx="5" fill="var(--track)"/>
+<rect x="120" y="230" width="36.0" height="10" rx="5" fill="#f34b7d"/>
+<text x="471" y="235" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">21.2k</text>
+<text x="24" y="262" font-size="13" dominant-baseline="middle">Kotlin</text>
+<rect x="120" y="257" width="297" height="10" rx="5" fill="var(--track)"/>
+<rect x="120" y="257" width="30.3" height="10" rx="5" fill="#a97bff"/>
+<text x="471" y="262" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">17.8k</text>
+<text x="24" y="289" font-size="13" dominant-baseline="middle">Other</text>
+<rect x="120" y="284" width="297" height="10" rx="5" fill="var(--track)"/>
+<rect x="120" y="284" width="51.7" height="10" rx="5" fill="var(--faint)"/>
+<text x="471" y="289" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">30.4k</text></svg>
