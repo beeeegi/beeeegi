@@ -10,33 +10,33 @@ text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helveti
 <text x="471" y="73" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">175k</text>
 <text x="24" y="100" font-size="13" dominant-baseline="middle">Luau</text>
 <rect x="120" y="95" width="297" height="10" rx="5" fill="var(--track)"/>
-<rect x="120" y="95" width="131.9" height="10" rx="5" fill="#00a2ff"/>
+<rect x="120" y="95" width="131.5" height="10" rx="5" fill="#00a2ff"/>
 <text x="471" y="100" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">77.5k</text>
 <text x="24" y="127" font-size="13" dominant-baseline="middle">Rust</text>
 <rect x="120" y="122" width="297" height="10" rx="5" fill="var(--track)"/>
-<rect x="120" y="122" width="119.6" height="10" rx="5" fill="#dea584"/>
+<rect x="120" y="122" width="119.2" height="10" rx="5" fill="#dea584"/>
 <text x="471" y="127" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">70.3k</text>
 <text x="24" y="154" font-size="13" dominant-baseline="middle">Python</text>
 <rect x="120" y="149" width="297" height="10" rx="5" fill="var(--track)"/>
-<rect x="120" y="149" width="91.2" height="10" rx="5" fill="#3572a5"/>
+<rect x="120" y="149" width="90.9" height="10" rx="5" fill="#3572a5"/>
 <text x="471" y="154" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">53.6k</text>
 <text x="24" y="181" font-size="13" dominant-baseline="middle">JavaScript</text>
 <rect x="120" y="176" width="297" height="10" rx="5" fill="var(--track)"/>
-<rect x="120" y="176" width="86.1" height="10" rx="5" fill="#f1e05a"/>
+<rect x="120" y="176" width="85.9" height="10" rx="5" fill="#f1e05a"/>
 <text x="471" y="181" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">50.6k</text>
 <text x="24" y="208" font-size="13" dominant-baseline="middle">Svelte</text>
 <rect x="120" y="203" width="297" height="10" rx="5" fill="var(--track)"/>
-<rect x="120" y="203" width="60.8" height="10" rx="5" fill="#ff3e00"/>
+<rect x="120" y="203" width="60.6" height="10" rx="5" fill="#ff3e00"/>
 <text x="471" y="208" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">35.7k</text>
 <text x="24" y="235" font-size="13" dominant-baseline="middle">C++</text>
 <rect x="120" y="230" width="297" height="10" rx="5" fill="var(--track)"/>
-<rect x="120" y="230" width="36.0" height="10" rx="5" fill="#f34b7d"/>
+<rect x="120" y="230" width="35.9" height="10" rx="5" fill="#f34b7d"/>
 <text x="471" y="235" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">21.2k</text>
 <text x="24" y="262" font-size="13" dominant-baseline="middle">Kotlin</text>
 <rect x="120" y="257" width="297" height="10" rx="5" fill="var(--track)"/>
-<rect x="120" y="257" width="30.3" height="10" rx="5" fill="#a97bff"/>
+<rect x="120" y="257" width="30.2" height="10" rx="5" fill="#a97bff"/>
 <text x="471" y="262" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">17.8k</text>
 <text x="24" y="289" font-size="13" dominant-baseline="middle">Other</text>
 <rect x="120" y="284" width="297" height="10" rx="5" fill="var(--track)"/>
-<rect x="120" y="284" width="51.7" height="10" rx="5" fill="var(--faint)"/>
+<rect x="120" y="284" width="51.6" height="10" rx="5" fill="var(--faint)"/>
 <text x="471" y="289" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">30.4k</text></svg>
