@@ -22,8 +22,8 @@ text{font-family:-apple-system,BlinkMacSystemFont,'Segoe UI','Noto Sans',Helveti
 <text x="471" y="154" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">53.6k</text>
 <text x="24" y="181" font-size="13" dominant-baseline="middle">JavaScript</text>
 <rect x="120" y="176" width="297" height="10" rx="5" fill="var(--track)"/>
-<rect x="120" y="176" width="85.9" height="10" rx="5" fill="#f1e05a"/>
-<text x="471" y="181" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">50.6k</text>
+<rect x="120" y="176" width="86.1" height="10" rx="5" fill="#f1e05a"/>
+<text x="471" y="181" font-size="12.5" text-anchor="end" dominant-baseline="middle" style="fill:var(--mute)">50.8k</text>
 <text x="24" y="208" font-size="13" dominant-baseline="middle">Svelte</text>
 <rect x="120" y="203" width="297" height="10" rx="5" fill="var(--track)"/>
 <rect x="120" y="203" width="60.6" height="10" rx="5" fill="#ff3e00"/>
